@@ -1,12 +1,8 @@
 package converter;
 
-import java.io.IOException;
-
-public class Fahrenheit extends Celsium implements Converter {
-    @Override
-    public void convert() throws IOException {
-        double celsius = super.Celsium();
-        double result =(9/5*celsius)+32;
-        System.out.println(result+" fahrenheits");
+public class Fahrenheit implements Converter {
+    public double convert(double degrees){
+        double q= ((degrees*5/9)+32);
+        return  q;
     }
 }

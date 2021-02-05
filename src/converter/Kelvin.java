@@ -1,11 +1,8 @@
 package converter;
 
-import java.io.IOException;
-
-public class Kelvin extends Celsium implements Converter {
-    public void convert() throws IOException {
-        double celsius=super.Celsium();
-        double result = celsius+273.15;
-        System.out.println(result+" kelvins");
+public class Kelvin implements Converter {
+    public double convert(double degrees){
+        double q =degrees+273.15;
+        return q;
     }
 }
