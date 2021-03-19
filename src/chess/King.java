@@ -1,7 +1,13 @@
 package chess;
 
 public class King extends ChessFighre{
-    public King(String x, String y, String value){
-        super(x , y , value);
+    public static int COUNTKING;
+    public King(int x, int y){
+        super(x,y);
+        COUNTKING++;
+    }
+    @Override
+    public void draw() {
+        System.out.println("the king is created");
     }
 }

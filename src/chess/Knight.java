@@ -1,7 +1,13 @@
 package chess;
 
 public class Knight extends ChessFighre {
-    public Knight(String x, String y, String value){
-        super(x ,y , value);
+    public static int COUNTKNIGHT;
+    public Knight(int x, int y){
+        super(x,y);
+        COUNTKNIGHT++;
+    }
+    @Override
+    public void draw() {
+        System.out.println("the knight is created");
     }
 }

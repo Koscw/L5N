@@ -1,7 +1,15 @@
 package chess;
 
 public class Quen extends ChessFighre{
-    public Quen(String x, String y, String value){
-        super(x ,y , value);
+
+        public static int COUNTQUEEN;
+    public Quen(int x, int y){
+            super(x,y);
+            COUNTQUEEN++;
+        }
+        @Override
+        public void draw() {
+            System.out.println("the queen is created");
+        }
     }
-}
+

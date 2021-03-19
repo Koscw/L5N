@@ -1,7 +1,13 @@
 package chess;
 
 public class Pawn extends ChessFighre {
-    public Pawn(String x, String y, String value){
-        super(x ,y , value);
+    public static int COUNTPAWNS;
+    public Pawn(int x, int y){
+        super(x,y);
+        COUNTPAWNS++;
+    }
+    @Override
+    public void draw() {
+        System.out.println("the pawn is created");
     }
 }

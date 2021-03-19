@@ -1,18 +1,21 @@
 package chess;
 
-public abstract class ChessFighre {
-    private String x;
-    private String y;
-    private String value;
-    public ChessFighre(String x, String y , String value){
+public abstract class ChessFighre implements Drawable{
+    String name = getClass().getName();
+    public int x,y;
+    public ChessFighre(int x, int y ){
+        draw();
         this.x=x;
         this.y=y;
-        this.value=value;
-    }
-    @Override
-    public String toString(){
-        return "ChessFighre{" +
-                "x = "+x+" y = "+y+" value= "+value;
 
+    }
+
+    @Override
+    public String toString() {
+        return "ChessFigure{" +
+                "name='" + name + '\'' +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
     }
 }

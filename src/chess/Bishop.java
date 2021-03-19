@@ -1,7 +1,13 @@
 package chess;
 
 public class Bishop extends ChessFighre {
-    public Bishop(String x, String y, String value){
-        super(x ,y , value);
+    public static int COUNTBISHOP;
+    public Bishop(int x, int y){
+        super(x,y);
+        COUNTBISHOP++;
+    }
+    @Override
+    public void draw() {
+        System.out.println("the bishop is created");
     }
 }

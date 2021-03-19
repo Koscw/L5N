@@ -1,7 +1,13 @@
 package chess;
 
 public class Rook extends ChessFighre{
-    public Rook(String x, String y, String value){
-        super(x , y , value);
+    public static int COUNTROOK;
+    public Rook(int x, int y){
+        super(x,y);
+        COUNTROOK++;
+    }
+    @Override
+    public void draw() {
+        System.out.println("the rook is created");
     }
 }
